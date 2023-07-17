@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Binary.e11-store</title>
+
+    <!-- fontawesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- bootstrap 5.0.2 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- icon -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!-- custom css -->
+    <link rel = "stylesheet" href = "css/main.css">
+
+    <!-- ajax aos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+</head>
+<body data-bs-spy="scroll" data-bs-target=".navbar"> 
+    <!-- navbar -->
+    <nav class = "navbar navbar-expand-lg navbar-light bg-dark py-4 fixed-top">
+        <div class = "container">
+            <div class="jom">
+                <a class = "navbar-brand d-flex justify-content-between align-items-center order-lg-0" href = "index.html">
+                    <img src = "https://drive.google.com/uc?id=1Dvf6_oQs1gCc2OiIp5rtbQY6jJCzKq2J" alt = "site icon">
+                    <span class = "text-uppercase fw-lighter ms-2">Binary.e11-store</span>
+                </a> 
+            </div>
+            <button class = "navbar-toggler" type = "button" data-bs-toggle = "collapse" data-bs-target = "#navMenu">
+                <span class = "navbar-toggler-icon"></span>
+            </button>
+
+            <div class = "collapse navbar-collapse order-lg-1" id = "navMenu">
+                <ul class = "navbar-nav mx-auto text-center">
+                    <li class = "nav-item px-2 py-2">
+                        <a class = "nav-link text-uppercase text-white active" href = "#header">Home</a>
+                    </li>
+                    <li class = "nav-item px-2 py-2">
+                        <a class = "nav-link text-uppercase text-white" href = "#collection">Produk Kami</a>
+                    </li>
+                    <li class = "nav-item px-2 py-2">
+                        <a class = "nav-link text-uppercase text-white" href = "#maps">Lokasi Toko</a>
+                    </li>
+                    <li class = "nav-item px-2 py-2">
+                        <a class = "nav-link text-uppercase text-white" href = "#kontak">Kontak Kami</a>
+                    </li>
+                    <li class = "nav-item px-2 py-2">
+                        <a class = "nav-link text-uppercase text-white" href = "#about">Tentang Kami</a>
+                    </li> 
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- juumbotron -->
+    <header id = "header" class = "vh-100 carousel slide bg-cover" data-bs-ride = "carousel">
+
+        <div id="home" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item text-center bg-cover vh-100 active slide-1">
+                    <div class="container h-100 d-flex align-items-center justify-content-center">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-15">
+                                <h2 class = "text-capitalize text-white">Selamat Datang Di Binary.e11-store</h2>
+                                <h1 class = "text-uppercase py-2 fw-bold text-white">Toko T-Shirtnya Nack-IT</h1>
+                                <a href = "https://wa.me/c/6283116460044" class = "btn mt-3 text-uppercase">Belanja Sekarang</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item text-center bg-cover vh-100 slide-2">
+                    <div class="container h-100 d-flex align-items-center justify-content-center">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-15">
+                                <h2 class = "text-capitalize text-white">Kualitas Original</h2>
+                                <h1 class = "text-uppercase py-2 fw-bold text-white">Buy One Shirt Get IT Souvenir </h1>
+                                <a href = "#collection" class = "btn mt-3 text-uppercase">Lihat Produk</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#home" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#home" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+    </header>
+
+    <!-- tentang kami -->
+    <section id = "about" class = "py-5" data-aos="fade-down" data-aos-delay="150">
+        <div class = "container">
+            <div class = "row gy-lg-5 align-items-center">
+                <div class = "title pt-3 pb-3 text-center">
+                    <h2 class = "position-re lative">Tentang Kami</h2>
+                </div>
+                <div class = "col-lg-6 order-lg-0">
+                    <div class="fgg">
+                        <img src = "https://drive.google.com/uc?id=1PDq8vPcW68wE_S6Li7u4XREllKhsQN9s" alt = "">
+                        <br><br>
+                    </div>
+                </div>
+                <div class = "col-lg-6 order-lg-1 text-center text-lg-start">
+                    <p class = "lead of" style="text-align: justify;"><b>Binary.e11_Store</b> merupakan suatu toko usaha kecil yang terjun pada bidang penjualan produk berupa <em>T-shirt</em> dan juga <em>souvenir</em> gantungan kunci. Toko ini bertujuan untuk memberikan produk yang terbaik kepada konsumen. Dengan adanya toko ini diharapkan konsumen dapat menikmati produk yang dijual berupa <em>T-shirt</em> dan juga <em>souvenir</em> gantungan kunci yang berbeda dari toko lainnya.</p>
+                </div>
+            </div>
+        </section>   
+
+        <!-- produk -->
+        <section id = "collection" class = "py-5" data-aos="fade-down" data-aos-delay="150">
+            <div class = "container">
+                <div class = "title text-center msf">
+                    <h2 class = "position-relative d-inline-block">Produk Kami</h2>
+                </div>
+
+                <div class = "row g-0">
+                    <div class = "d-flex flex-wrap justify-content-center mt-5 filter-button-group">
+                        <button type = "button" class = "btn m-2 text-dark active-filter-btn" data-filter = "*">Semua</button>
+                        <button type = "button" class = "btn m-2 text-dark" data-filter = ".best">T-Shirt</button>
+                        <button type = "button" class = "btn m-2 text-dark" data-filter = ".feat">Souvernir</button>
+                        <button type = "button" class = "btn m-2 text-dark" data-filter = ".new">Limited Edition</button>
+                    </div>
+
+                    <div class = "collection-list mt-4 row gx-0 gy-3">
+                        <div class = "col-md-6 col-lg-4 col-xl-3 p-2 best">
+                            <div class = "collection-img position-relative">
+                                <div class="tooltip-container">
+                                    <span class="tooltip">
+                                        <h5>T-Shirt Enginnering</h5>
+                                        <p>Kaos cotton combed 30s dengan ukuran L, XL dan XXL warna hitam dengan desain depan text Enginnering dan belakang Informatic</p></span>
+                                        <img src = "https://drive.google.com/uc?id=1MlMFzrn9UG_CVxGOrnBI2NXKAXuyb1nl" class = "w-100"> 
+                                        <img class="w-100 blk" src="https://drive.google.com/uc?id=17M6ZYeMWzj228k7hkaIDkiSiPOquuSh3"> 
+                                    </div>
+                                </div>
+                                <div class = "text-center">
+                                    <p class = "text-capitalize my-1">T-Shirt Enginnering</p>
+                                    <span class = "fw-bold">Rp. 110.000</span><br>
+                                    <a href = "https://wa.me/c/6283116460044" class = "btn btn-primary mt-3">Beli Item</a>
+                                </div>
+                            </div>
+
+                            <div class = "col-md-6 col-lg-4 col-xl-3 p-2 best">
+                                <div class = "collection-img position-relative">
+                                 <div class="tooltip-container">
+                                    <span class="tooltip">
+                                        <h5>T-Shirt G-IT-UPR</h5>
+                                        <p>Kaos cotton combed 30s dengan ukuran L, XL dan XXL warna hitam dengan desain GIT didepan dan desain ERROR dibelakang</p></span>
+                                        <img src = "https://drive.google.com/uc?id=1MKYpg9PYQy-H9VJq6WOH68ucWFwGnKJD" class = "w-100">
+                                        <img class="w-100 blk" src="https://drive.google.com/uc?id=1nN_kyguCz99P9X1jWDU_P3TBQOqqcOAI">
+                                    </div>
+                                </div>
+                                <div class = "text-center">
+                                    <p class = "text-capitalize my-1">T-Shirt G-IT-UPR</p>
+                                    <span class = "fw-bold">Rp. 110.000 </span><br>
+                                    <a href = "https://wa.me/c/6283116460044" class = "btn btn-primary mt-3">Beli Item</a>
+                                </div>
+                            </div>
+
+                            <div class = "col-md-6 col-lg-4 col-xl-3 p-2 best">
+                                <div class = "collection-img position-relative">
+                                    <div class="tooltip-container">
+                                        <span class="tooltip">
+                                            <h5>T-Shirt NoC0de</h5>
+                                            <p>Kaos cotton combed 30s dengan ukuran L, XL dan XXL warna hitam dengan desain text NoC0de depan belakang </p></span>
+                                            <img src = "https://drive.google.com/uc?id=17ODVKeg5O9bFq0crUx2lZQSjhNGC4xUr" class = "w-100">
+                                            <img class="w-100 blk" src="https://drive.google.com/uc?id=1Njwb9HuoxD7Ep3qNFEsqXcfr9LI-I6h7">
+                                        </div>
+                                    </div>
+                                    <div class = "text-center">
+                                        <p class = "text-capitalize my-1">T-Shirt No C0de</p>
+                                        <span class = "fw-bold">Rp. 110.000</span><br>
+                                        <a href = "https://wa.me/c/6283116460044" class = "btn btn-primary mt-3">Beli Item</a>
+                                    </div>
+                                </div>
+
+                                <div class = "col-md-6 col-lg-4 col-xl-3 p-2 best">
+                                    <div class = "collection-img position-relative">
+                                        <div class="tooltip-container">
+                                            <span class="tooltip">
+                                                <h5>T-Shirt Jav-Style</h5>
+                                                <p>Kaos cotton combed 30s dengan ukuran L, XL dan XXL warna hitam dengan desain text jepang depan belakang</p></span>
+                                                <img src = "https://drive.google.com/uc?id=1_jWNj7jm1XuqPxt3iMB3QxDBqcdmp6AI" class = "w-100">
+                                                <img class="w-100 blk" src="https://drive.google.com/uc?id=1GVGEmdwxlF0my3UUVja3aKU547xwb7He">
+                                            </div>
+                                        </div>
+                                        <div class = "text-center">
+                                            <p class = "text-capitalize my-1">T-Shirt Jav-Style</p>
+                                            <span class = "fw-bold">Rp. 110.000</span><br>
+                                            <a href = "https://wa.me/c/6283116460044" class = "btn btn-primary mt-3">Beli Item</a>
+                                        </div>
+                                    </div>
+
+                                    <div class = "col-md-6 col-lg-4 col-xl-3 p-2 best">
+                                        <div class = "collection-img position-relative">
+                                            <div class="tooltip-container">
+                                                <span class="tooltip">
+                                                    <h5>T-Shirt 404</h5>
+                                                    <p>Kaos cotton combed 30s dengan ukuran L, XL dan XXL warna hitam dengan desain text 404 didepan dan desain tangan 3d grid dibelakang</p></span>
+                                                    <img src = "https://drive.google.com/uc?id=1dlxjKSQm3D6CJyA6IkyPGTKcpew_pPMx" class = "w-100">
+                                                    <img class="w-100 blk" src="https://drive.google.com/uc?id=1SUmJ6U1Q1e5A-j7lxxoTvLmBMLa-fTfc">
+                                                </div>
+                                            </div>
+                                            <div class = "text-center">
+                                                <p class = "text-capitalize my-1">T-Shirt 404</p>
+                                                <span class = "fw-bold">Rp. 110.000</span><br>
+                                                <a href = "https://wa.me/c/6283116460044" class = "btn btn-primary mt-3">Beli Item</a>
+                                            </div>
+                                        </div>
+
+                                        <div class = "col-md-6 col-lg-4 col-xl-3 p-2 best">
+                                            <div class = "collection-img position-relative">
+                                                <div class="tooltip-container">
+                                                    <span class="tooltip">
+                                                        <h5>T-Shirt White-Future</h5>
+                                                        <p>Kaos cotton combed 30s dengan ukuran L, XL dan XXL warna putih dengan desain retro modern didepan dan desain bunga mawar merah dibelakang</p></span>
+                                                        <img src = "https://drive.google.com/uc?id=15rFuy1c4C2xIEJduPXAuQNy_vLEnmysd" class = "w-100">
+                                                        <img class="w-100 blk" src="https://drive.google.com/uc?id=18lJcyONtJH6FkxyVopKbHqyXd6muMzRP">
+                                                    </div>
+                                                </div>
+                                                <div class = "text-center">
+                                                    <p class = "text-capitalize my-1">T-Shirt White-Future</p>
+                                                    <span class = "fw-bold">Rp. 110.000</span><br>
+                                                    <a href = "https://wa.me/c/6283116460044" class = "btn btn-primary mt-3">Beli Item</a>
+                                                </div>
+                                            </div>
+
+                                            <div class = "col-md-6 col-lg-4 col-xl-3 p-2 new">
+                                                <div class="tooltip-container">
+                                                    <span class="tooltip">
+                                                        <h5>T-Shirt Laravel</h5>
+                                                        <p>Kaos cotton combed 30s dengan ukuran L, XL dan XXL warna hitam dengan desain Laravel</p></span>
+                                                        <div class = "collection-img position-relative">
+                                                            <img src = "https://drive.google.com/uc?id=1TaKW6WY2IDpiCP7gkmmIFkbG4dqaP8bX" class = "w-100">
+                                                            <img class="w-100 blk" src="https://drive.google.com/uc?id=1LWy6gps0eL9n15CocG7-FTg2dJpO5VHC">
+                                                        </div>
+                                                    </div>
+                                                    <div class = "text-center">
+                                                        <p class = "text-capitalize my-1">T-Shirt Laravel</p>
+                                                        <span class = "fw-bold">Rp. 109.999</span><br>
+                                                        <a href = "https://wa.me/c/6283116460044" class = "btn btn-primary mt-3">Beli Item</a>
+                                                    </div>
+                                                </div>
+
+                                                <div class = "col-md-6 col-lg-4 col-xl-3 p-2 feat">
+                                                    <div class = "collection-img position-relative">
+                                                        <div class="tooltip-container">
+                                                            <span class="tooltip">
+                                                                <h5>Souvernir IT</h5>
+                                                                <p>Souvernir IT dengan desain logo software IT dan logo Engginer</p></span>
+                                                                <img src = "https://drive.google.com/uc?id=1q16MaclT6FfReHJtS1_pzYKs9knkjbYM" class = "w-100">
+                                                                <img class="w-100 blk" src="https://drive.google.com/uc?id=1PvmUs_BJ3HQa8GmikRT-CQ2q4t-EIM8X">
+                                                            </div>
+                                                        </div>
+                                                        <div class = "text-center">
+                                                            <p class = "text-capitalize my-1">Souvernir IT</p>
+                                                            <span class = "fw-bold">Rp. 5.000</span><br>
+                                                            <a href = "https://wa.me/c/6283116460044" class = "btn btn-primary mt-3">Beli Item</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
+
+                                    <!-- lokasi -->
+                                    <section id = "maps" class = "py-5" data-aos="fade-down" data-aos-delay="150">
+                                        <div class = "container">
+                                            <div class = "row gy-lg-5 align-items-center">
+                                                <div class = "title pt-3 pb-3 text-center">
+                                                    <h2 class = "position-relative">Lokasi Toko</h2>
+                                                </div>
+                                                <div class = "col-lg-6 order-lg-0">
+                                                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d996.7000636385611!2d113.9035547291655!3d-2.228706099898461!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dfcb3101b55251b%3A0x8ad98fac3aab1a22!2sBinary.e11-store!5e0!3m2!1sid!2sid!4v1667409084620!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                                 <br><br>
+                                             </div>
+                                             <div class = "col-lg-6 order-lg-1 text-center text-lg-start bsr">
+                                                <p><i class="ri-map-pin-fill"></i> Jl. Menteng XXII No.15, Kec. Jekan Raya, Kota Palangka Raya, Kalimantan Tengah 74874</p>
+                                                <p><i class="ri-phone-fill"></i> Hubungi Kami : 0831-1646-0044 Respon Dari Jam Kerja (09.00-16.00 WIB)</p>
+                                                <a href="https://goo.gl/maps/neLvG6Mo7VLQqopY7" class="btn btn-primary">Buka Maps</a>
+                                                <a href="https://wa.me/+6283116460044?text=Halo" class="btn btn-primary">Hubungi Toko</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+
+                                <!-- kontak kami -->
+                                <section id = "kontak" class = "py-5" data-aos="fade-down" data-aos-delay="150">
+                                    <div class = "container">
+                                        <div class = "row gy-lg-5 align-items-center">
+                                            <div class = "title pt-3 pb-3 text-center kon">
+                                                <h2 class = "position-relative">Kontak Kami</h2><!-- https://formspree.io/f/mayklgdl -->
+                                            </div>
+                                            <form name="xd" class="row justify-content-center" method="POST" onsubmit="return validateForm()">
+                                                <div class="col-lg-8">
+                                                    <div class="row g-3">
+                                                      <div class="form-group col-md-6">
+                                                        <input type="text" id="namalk" name="Nama Lengkap :" class="form-control" placeholder="Nama Lengkap">
+                                                    </div>
+                                                    <div class="form-group col-md-6">
+                                                        <input type="text" id="hp" name="No. Hp :" class="form-control" placeholder="No. Hp">
+                                                    </div>
+                                                    <div class="input-group">
+                                                        <span class="input-group-text" id="basic-addon1">@</span>
+                                                        <input type="text" id="mail" name="Email :" class="form-control" placeholder="Email" aria-label="Email" aria-describedby="basic-addon1">
+                                                    </div>
+                                                    <div class="form-group col-md-6">
+                                                        <div class="form-floating">
+                                                            <input type="date" class="form-control" id="tgl" name="Tanggal Pemesanan :">
+                                                            <label for="floatingInputGrid">Tanggal Pemesanan</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group col-md-6">
+                                                        <div class="form-floating">
+                                                            <input type="text" class="form-control" id="alt" name="Alamat :" placeholder="Alamat Lengkap">
+                                                            <label for="floatingInputGrid">Alamat Lengkap</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <select class="form-select" aria-label="Default select example" id="pay" name="Pembayaran :">
+                                                            <option selected>Pilih Pembayaran</option>
+                                                            <option value="COD">COD</option>
+                                                            <option value="Transfer Via Rekening">TF Via Rekening</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="form-floating">
+                                                        <textarea class="form-control" id="des" name="Pesanan :" placeholder="Pesan" style="height: 100px"></textarea>
+                                                        <label for="floatingTextarea2 text-muted">Pesan</label>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <input class="form-check-input" type="checkbox" id="flexCheckChecked" name="mbas">
+                                                        <label class="form-check-label" for="flexCheckChecked"> Data yang dimasukan sudah benar</label>
+                                                    </div>
+                                                    <div class="form-group text-center col-md-12">
+                                                        <button type="submit" class="btn btn-primary">Kirim Pesan</a>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </section>  
+
+                                <!-- footer -->
+                                <footer class = "bg-dark py-5">
+                                    <div class = "container">
+                                        <div class = "row text-white g-4">
+                                            <div class = "col-md-6 col-lg-3">
+                                                <a class = "text-uppercase text-decoration-none brand text-white" href = "index.html">Binary.e11-store</a>
+                                                <p class = "text-white text-muted mt-3">Toko T-Shirt IT</p>
+                                            </div>
+
+                                            <div class = "col-md-6 col-lg-3">
+                                                <h5 class = "fw-light">Navigasi</h5>
+                                                <ul class = "list-unstyled">
+                                                    <li class = "my-3">
+                                                        <a href = "#header" class = "text-white text-decoration-none text-muted">
+                                                            <i class = "fas fa-chevron-right me-1"></i> Home
+                                                        </a>
+                                                    </li>
+                                                    <li class = "my-3">
+                                                        <a href = "#collection" class = "text-white text-decoration-none text-muted">
+                                                            <i class = "fas fa-chevron-right me-1"></i> Produk Kami
+                                                        </a>
+                                                    </li>
+                                                    <li class = "my-3">
+                                                        <a href = "#maps" class = "text-white text-decoration-none text-muted">
+                                                            <i class = "fas fa-chevron-right me-1"></i> Lokasi Toko
+                                                        </a>
+                                                    </li>
+                                                    <li class = "my-3">
+                                                        <a href = "#kontak" class = "text-white text-decoration-none text-muted">
+                                                            <i class = "fas fa-chevron-right me-1"></i> Kontak Kami
+                                                        </a>
+                                                    </li>
+                                                    <li class = "my-3">
+                                                        <a href = "#about" class = "text-white text-decoration-none text-muted">
+                                                            <i class = "fas fa-chevron-right me-1"></i> Tentang Kami
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+
+                                            <div class = "col-md-6 col-lg-3">
+                                                <h5 class = "fw-light mb-3">Kontak Kami</h5>
+                                                <div class = "d-flex justify-content-start align-items-start my-2 text-muted">
+                                                    <span class = "me-3">
+                                                        <i class = "fas fa-map-marked-alt"></i>
+                                                    </span>
+                                                    <span class = "fw-light">
+                                                        Jl. Menteng XXII No.15, Kec. Jekan Raya, Kota Palangka Raya, Kalimantan Tengah 74874
+                                                    </sp an>
+                                                </div>
+                                                <div class = "d-flex justify-content-start align-items-start my-2 text-muted">
+                                                    <span class = "me-3">
+                                                        <i class = "fas fa-envelope"></i>
+                                                    </span>
+                                                    <span class = "fw-light">
+                                                        binarye11store@mail.com
+                                                    </span>
+                                                </div>
+                                                <div class = "d-flex justify-content-start align-items-start my-2 text-muted">
+                                                    <span class = "me-3">
+                                                        <i class = "fas fa-phone-alt"></i>
+                                                    </span>
+                                                    <span class = "fw-light">
+                                                        +62 831 1646 0044
+                                                    </span>
+                                                </div>
+                                            </div>
+
+                                            <div class = "col-md-6 col-lg-3">
+                                                <h5 class = "fw-light mb-3">Ikuti Kami</h5>
+                                                <div>
+                                                    <ul class = "list-unstyled d-flex">
+                                                        <li>
+                                                            <a href = "https://www.instagram.com/binary.e11_store/" class = "text-white text-decoration-none text-muted fs-4 me-4">
+                                                                <i class = "fab fa-instagram"></i>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </footer> 
+
+                                <!-- bootstrap js -->
+                                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+                                <!-- Bootstrap Bundle with Popper -->
+                                <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+                                <!-- jquery -->
+                                <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+                                <!-- isotope js -->
+                                <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+
+                                <!-- custom js -->
+                                <script src = "js/script.js"></script>
+
+                                <!-- Data Aos Delay -->
+                                <script>
+                                 AOS.init({
+                                  duration: 800,
+                                  offset:150,
+                              });
+                          </script>
+
+                      </body>
+                      </html>
